@@ -1,5 +1,5 @@
 {
-    "name": "windy-plugin-examples",
+    "name": "windy-plugin-Owlet.AA-CAES",
     "version": "0.5.0",
     "description": "Windy plugin system enables anyone, with basic knowledge of Javascript to enhance Windy with new functionality (default desc).",
     "main": "dist/plugin.js",
@@ -23,12 +23,15 @@
         "commander": "^2.19.0",
         "consola": "^1.4.4",
         "decache": "^4.4.0",
+        "es-dev-server": "^1.23.1",
         "express": "^4.16.4",
         "fs-extra": "^7.0.0",
+        "jstat": "^1.9.2",
         "less": "^3.8.1",
         "prompts": "^1.1.1",
         "riot-compiler": "^3.5.1",
-        "ucfirst": "^1.0.0"
+        "ucfirst": "^1.0.0",
+        "windy": "^1.0.1"
     },
     "devDependencies": {
         "eslint": "^6.6.0",
