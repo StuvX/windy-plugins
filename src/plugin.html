@@ -3790,8 +3790,8 @@
 				return {
 					fillColor: hue,//"#ff6666",
 					fillOpacity: intensity*0.9,
-					color: "#B04173",
-					opacity: intensity*0.9,
+					color: "#00000a",
+					opacity: 0.5,
 					radius: 4,
 					weight: 1,
 				}
@@ -3839,7 +3839,8 @@
 				}
 				// console.log('I am being opened');
 
-				map.setView([54.6, -115.5],5)
+				map.setView([54.6, -115.5],5);
+				// store.set('closePopupOnClick', 'False');
 
 				// Lets change layer to Wind
 				store.set('overlay', 'wind');
@@ -3851,7 +3852,7 @@
 					let lat = well.geometry.coordinates[1];
 					let lon = well.geometry.coordinates[0];
 					let latlon = lat + ' ' + lon;
-					const marker = L.circleMarker([lat, lon], wellStyle(1)).addTo(map);
+					const marker = L.circleMarker([lat, lon], wellStyle(0)).addTo(map);
 					markers[latlon] = marker;
 				}
 
@@ -3907,7 +3908,7 @@
 					}
 					markers[latlon].setStyle(wellStyle(intense));
 					let tooltip = '<div style="min-width: 50px;">' + windspd+ ' m/s <br> ' + power.toFixed(0) + ' kW </div>';
-					markers[latlon].setPopupContent(tooltip);
+					markers[latlon].bindPopup(tooltip);
 					return power;
 				}
 
