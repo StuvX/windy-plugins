@@ -3901,7 +3901,7 @@
 						intense = 0.;
 						power = 0.;
 					} else {
-						let rise = 9771.3*jStat.weibull.cdf(windspd,11.3,3.64)+15;
+						let rise = 9771.3*jStat.weibull.cdf(windspd,11.3,3.64)+4.1;
 						let fall = -555*windspd+15150;
 						power = Math.min(rise, 4200, fall);
 						intense = power/4200;
