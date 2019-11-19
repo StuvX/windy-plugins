@@ -1,5 +1,10 @@
 <p align="center"><img src="https://www.windy.com/img/logo201802/logo-full-windycom-gray-v3.svg"></p>
 
+### Owlet Windy Plugin
+Owlet wants to repurpose all the orphaned oil wells in Alberta into Advanced Adiabatic - Compressed Air Energy Storage (AA-CAES). This plugin uses current wind speeds to estimate the energy available if a 4.2 MW wind turbine was installed at each site. Using the Vestas V150-4.2 power curve characteristics, the wind speed at 100 m elevation is interpolated, and the wind generation estimated. Each site marker is colour coded based on the power generated vs. capacity.
+
+This data is intended to be used to compare to Alberta energy demand and generation, and to demonstrate the viability of using the orphaned wells as AA-CAES, with a full charge consuming 2.9 MWh, returning 2 MWh per site.
+
 ### Windy plugins
 This repository acts as an documentation, playground and boilerplate for your own Windy plugin.
 
@@ -49,7 +54,7 @@ Our custom [Windy Plugin Compiler](docs/PLUGIN_COMPILER.md) does all the job for
  1) Make sure, that your `package.json` is updated, and that:
     + name, is unique name of your plugin
     + description, describes what your plugin does
-    + author and repository reflects your name and where the plugin hosted is
+    + author and repository reflects your name and where the plugin is hosted
  2) Remove this `README.md` and put there few words about your plugin (and maybe some screenshot if you want). The text from README file will be used in our planned plugins gallery.
  3) Publish your plugin as npm package by `npm publish`
  4) Test your published npm package on [Windy's Plugin page](https://www.windy.com/plugins)
@@ -95,6 +100,3 @@ Drop a line in our [Windy Plugins section](https://community.windy.com/category/
       - Initial version of this repo
 
 <small>This is default readme - please do not remove this line</small>
-
-
-

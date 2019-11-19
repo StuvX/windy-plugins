@@ -3907,7 +3907,7 @@
 						intense = power/4200;
 					}
 					markers[latlon].setStyle(wellStyle(intense));
-					let tooltip = '<div style="min-width: 50px;">' + windspd+ ' m/s <br> ' + power.toFixed(0) + ' kW </div>';
+					let tooltip = '<div style="min-width: 50px;">' + windspd+ ' m/s <br> ' + (power/1000).toFixed(1) + ' MW </div>';
 					markers[latlon].bindPopup(tooltip);
 					return power;
 				}
